@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+
+    <div class="d-flex justify-content-center gap-3">
+        <a href="{% url 'list_pr' %}" class="btn btn-success">Create Purchase Requests</a>
+        <a href="{% url 'list_po' %}" class="btn btn-info">Create Purchase Orders</a>
+        <a href="{% url 'create_pr' %}" class="btn btn-primary">Create PR</a>
+        <a href="{% url 'create_po' %}" class="btn btn-warning">Create PO</a>
+        <a href="{% url 'bulk_upload' %}" class="btn btn-dark">Bulk Upload</a>
+    </div>
+
+
+{% endblock %}
